@@ -1,0 +1,41 @@
+/* contact section */
+#contact{
+    /* border: 2px solid darkolivegreen; */
+}
+#contact-box{
+    /* border: 1px solid rgb(187, 95, 10); */
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#contact-box input,textarea{
+    width: 100%;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 11px;
+    font-size: 13px;
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-family: serif;
+    font-size: 20px;
+    color: rgb(5, 18, 136);
+    padding-top: 5px;
+    
+}
+#contact-box::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid #000; */
+    background-color: rgb(216, 230, 235);
+    z-index: -1;
+
+}
