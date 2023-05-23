@@ -1,0 +1,34 @@
+/* our-clients */
+#our-clients{
+    /* border: 2px solid #000; */
+    height: 300px;
+}
+#our-clients::before{
+    content: " ";
+    position: absolute;
+    background-image: url(/picture/clients.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88 ;
+
+}
+
+#clients{
+    /* border: 1px solid brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+    height: 123px;
+    border-radius: 18px;
+    
+}
+
+.clients-item{
+    margin: 30px;
+}
