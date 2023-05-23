@@ -1,0 +1,39 @@
+/* Navigation css */
+#navbar{
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* Home css */
+#home{
+    height: 350px;
+    padding: 8px 60px;
+}
+#home::before{
+    height: 370px;
+}
+#home h1{
+    font-size: 26px;
+}
+#home p{
+    font-size:16px ;
+}
+.btn{
+    padding: 3px 12px;
+    margin: 7px;
+    font-size: 14px;
+}
+
+/* Services Section */
+#services{
+    flex-direction: column;
+    /* justify-content: ; */
+    align-items: center;
+}
+
+/* Clients Section  */
+
+/* Contact css */
+
+/* Footer css */

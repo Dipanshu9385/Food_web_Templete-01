@@ -1,0 +1,237 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(210, 231, 208);
+}
+
+    /* Utility classes */
+    .h-primary{
+        font-size: 3rem;
+        padding: 12px;
+        color: rgb(187, 95, 10);
+        text-align: center;
+    }
+    .h-secondary{
+        font-size: 2rem;
+        padding: 12px;
+        color: rgb(185, 175, 30);
+        text-align: center;
+
+    }
+    .p-primary{
+        font-size: 1.3rem;
+        padding: 6px;
+        color: rgb(6, 93, 143);
+        text-align: center;
+    }
+    .btn{
+        padding: 3px 19px;
+        margin: 20px ;
+        font-size: 1.2rem;
+        text-align: center;
+        border: 2px solid rgb(187, 95, 10);
+        background-color: rgb(231, 202, 176);
+        color: rgb(143, 69, 17);
+        border-radius: 10px;
+        cursor: pointer;
+    
+    }
+    .center{
+        text-align: center;
+    }
+
+/* Navigation Bar */
+#navbar{
+    /* border: 1px solid rgb(226, 36, 36); */
+    /* background-color: #d68585; */
+    display: flex;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+    }
+
+
+#logo img{
+    width: 50px;
+    border-radius: 39px;
+    margin: 3px 10px;
+    vertical-align: middle;
+    
+    
+}
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+    /* padding: 23px; */
+}
+#navbar ul li{
+    list-style: none;
+    
+}
+#navbar ul li a{
+    display: block;
+    border-radius: 20px;
+    padding: 2px 20px;
+    margin: 2px 10px;
+    text-decoration: none;
+    /* font-size: 1.1rem; */
+    color: white;
+    
+}
+#navbar ul li a:hover{
+    color: rgb(10, 87, 10);
+    background-color: rgb(215, 231, 215);
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Section home CSS */
+#home{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    padding: 6px 200px;
+    height: 300px;
+    /* margin: 4px 200px; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#home::before{
+    content: "";
+    background-image:url(/picture/pexels-photo-1640773.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.btn:hover{
+    background-color: rgb(163, 212, 163);
+    color: darkgreen;
+    border-color: grey;
+}
+
+/* section-contanior */
+#services{
+    /* border: 2px solid black; */
+    margin: 34px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#services img{
+    border-radius: 130px;
+}
+#services .box{
+    /* border: 1px solid green; */
+    border-radius:0px 0px 16px 16px;
+    margin: 3px;
+    width: 330px;
+
+}
+#services img{
+    height: 300px;
+    width: 330px;
+    
+    
+}
+
+/* our-clients */
+#our-clients{
+    border: 2px solid #000;
+    height: 300px;
+}
+#our-clients::before{
+    content: " ";
+    position: absolute;
+    background-image: url(/picture/clients.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88 ;
+
+}
+
+#clients{
+    /* border: 1px solid brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+    height: 123px;
+    border-radius: 18px;
+    
+}
+
+.clients-item{
+    margin: 30px;
+}
+
+/* contact section */
+#contact{
+    border: 2px solid darkolivegreen;
+}
+#contact-box{
+    /* border: 1px solid rgb(187, 95, 10); */
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#contact-box input,textarea{
+    width: 100%;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 11px;
+    font-size: 13px;
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-family: serif;
+    font-size: 20px;
+    color: rgb(5, 18, 136);
+    padding-top: 5px;
+    
+}
+#contact-box::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid #000; */
+    background-color: rgb(216, 230, 235);
+    z-index: -1;
+
+}
+footer{
+    background-color: #000;
+    color: white;
+    padding: 7px 20px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
